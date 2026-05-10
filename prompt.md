@@ -7,3 +7,4 @@
 5. **Clean HTML**: Remove unnecessary blank rows and whitespace from the final HTML.
 6. **Localization**: Lock the page to the English language and remove other language options or switchers.
 7. **Structure**: Create the clone as a subfolder within the repository, not as a separate repository.
+8. **Reference Implementation**: Use the logic established in the `apple/` folder (using `wget`, automated resource moving, and Python-based HTML patching) as the template for all future clones.
