@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -64,8 +65,13 @@
         }
 
         @keyframes float {
-            0% { transform: translate(0, 0) scale(1); }
-            100% { transform: translate(30px, 50px) scale(1.1); }
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+
+            100% {
+                transform: translate(30px, 50px) scale(1.1);
+            }
         }
 
         header {
@@ -79,7 +85,9 @@
             font-weight: 800;
             margin-bottom: 1rem;
             background: linear-gradient(to right, #fff, #94a3b8);
+            background-clip: text;
             -webkit-background-clip: text;
+            color: transparent;
             -webkit-text-fill-color: transparent;
             letter-spacing: -0.05em;
         }
@@ -115,7 +123,6 @@
             flex-direction: column;
             position: relative;
             overflow: hidden;
-            group: card;
         }
 
         .card::before {
@@ -183,12 +190,21 @@
         }
 
         @media (max-width: 768px) {
-            h1 { font-size: 2.5rem; }
-            .grid-container { gap: 1.5rem; }
-            .card { padding: 2rem 1.5rem; }
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .grid-container {
+                gap: 1.5rem;
+            }
+
+            .card {
+                padding: 2rem 1.5rem;
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="ambient-blob blob-1"></div>
     <div class="ambient-blob blob-2"></div>
@@ -202,14 +218,24 @@
         <a href="apple/apple_test.html" class="card">
             <span class="card-icon">🍎</span>
             <h2>Apple Clone (Test)</h2>
-            <p>A locally hosted clone of the Apple homepage, complete with assets to render correctly without remote dependencies.</p>
+            <p>A locally hosted clone of the Apple homepage, complete with assets to render correctly without remote
+                dependencies.</p>
             <div class="card-footer">
                 <span>View Project</span>
                 <span class="arrow">→</span>
             </div>
         </a>
 
-
+        <a href="google/google_test.html" class="card">
+            <span class="card-icon">🧪</span>
+            <h2>Google Clone (Test)</h2>
+            <p>An alternative test version of the Google homepage clone.</p>
+            <div class="card-footer">
+                <span>View Project</span>
+                <span class="arrow">→</span>
+            </div>
+        </a>
     </div>
 </body>
+
 </html>
